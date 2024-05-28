@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaPro - Evolua seu conhecimento!</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: sans-serif;
+      margin-left: 3%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: transparent;
+    }
+
+    .text-header{
+      color: teal;
+    }
+
+    .header p {
+      margin-bottom: 10px;
+    }
+
+    .text-header a {
+      text-decoration: underline;
+      color: rgb(28, 43, 43);
+    }
+
+    .form-container {
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-button {
+      background-color: teal;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="text-header">EducaPro</h1>
+  </header>
+
+  <div>
+    <h1 class="text-header">Evolua seu conhecimento<br> e Transforme o futuro!</h1>
+    <a class = "text-header" href="#">Não possui conta ainda? Cadastre-se!</a>
+  </div>
+<br>
+  <section class="form-container">
+    <h2>Cadastre-se</h2>
+    <form action="#">
+      <div class="form-group">
+        <label class="form-label" for="email">E-mail:</label>
+        <input type="email" class="form-input" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="senha">Senha:</label>
+        <input type="password" class="form-input" id="senha" name="senha" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="confirmarSenha">Confirmar Senha:</label>
+        <input type="password" class="form-input" id="confirmarSenha" name="confirmarSenha" required >
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="nome">Nome Completo:</label>
+        <input type="text" class="form-input" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="cpf">CPF:</label>
+        <input type="text" class="form-input" id="cpf" name="cpf" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="telefone">Telefone:</label>
+        <input type="tel" class="form-input" id="telefone" name="telefone" required>
+      </div>
+      <button type="submit" class="form-button">Cadastrar-se</button>
+    </form>
+  </section>
+</body>
+</html>
